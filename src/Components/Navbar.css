@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(90deg, #4c8cfa, #1a73e8); /* Gradient background */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  min-height: 60px; /* Minimum height to prevent shrinking */
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.navbar-logo .highlight {
+  color: #ffcc00; /* Light yellow accent */
+  font-style: italic;
+}
+
+.navbar-totals {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.navbar-totals p {
+  margin: 0;
+}
+
+.navbar-totals .expense span {
+  color: #ff4d4d; /* Red for expenses */
+  font-weight: bold;
+}
+
+.navbar-totals .profit span {
+  color: #4caf50; /* Green for profits */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 2rem;
+    min-height: 80px; /* Maintain a consistent height */
+  }
+
+  .navbar-logo h2 {
+    font-size: 1.8rem;
+  }
+
+  .navbar-totals {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 1.5rem;
+    min-height: 80px; /* Prevent shrinking further */
+  }
+
+  .navbar-logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-totals {
+    font-size: 0.9rem;
+  }
+}

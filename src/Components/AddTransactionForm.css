@@ -1,0 +1,102 @@
+/* form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+
+   form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust width dynamically */
+    max-width: 400px; /* Restrict maximum width */
+    margin: 20px auto;
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+  
+  input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Make inputs and buttons adapt to form width */
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      width: 95%; /* Reduce width for smaller screens */
+      padding: 15px; /* Adjust padding */
+    }
+  
+    input, select, button {
+      font-size: 14px; /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      width: 100%; /* Use full width for very small screens */
+      padding: 10px;
+    }
+  
+    input, select, button {
+      font-size: 13px; /* Further reduce font size for better fit */
+    }
+  }
+  

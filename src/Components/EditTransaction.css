@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fffbea;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #c82333;
+  }
+  
