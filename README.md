@@ -1,29 +1,24 @@
-Transaction Management App
+# Transaction Management App
 
-This is a Transaction Management App built using React.js and Firebase. The app allows users to manage their financial transactions, including adding, editing, and deleting transactions. It supports real-time updates via Firebase Firestore and is hosted on Firebase Hosting.
+This is a **Transaction Management App** built using React.js and Firebase. The app allows users to manage their financial transactions, including adding, editing, and deleting transactions. It supports real-time updates via Firebase Firestore and is hosted on Firebase Hosting.
 
-Features
+## Features
 
-Add Transactions: Enter the transaction amount, description, date, and type (Income or Expense).
+- **Add Transactions**: Enter the transaction amount, description, date, and type (Income or Expense). Duplicate entries are not allowed.
+- **Edit Transactions**: Modify existing transactions with an intuitive interface. Duplicate entries are not allowed during editing either; the system validates against existing records.
+- **Delete Transactions**: Remove unwanted transactions.
+- **Real-Time Updates**: Automatically syncs data across all devices using Firebase Firestore.
+- **Responsive Design**: Fully responsive UI, accessible on all devices.
 
-Edit Transactions: Modify existing transactions with an intuitive interface. The app ensures that edited transactions do not duplicate existing ones in real-time.
+## Technologies Used
 
-Delete Transactions: Remove unwanted transactions easily.
+- **Frontend**: React.js
+- **Backend**: Firebase Firestore (NoSQL database)
+- **Hosting**: Firebase Hosting
 
-Real-Time Updates: Automatically syncs data across all devices using Firebase Firestore.
+## Project Structure
 
-Responsive Design: Fully responsive UI, accessible on all devices.
-
-Technologies Used
-
-Frontend: React.js
-
-Backend: Firebase Firestore (NoSQL database)
-
-Hosting: Firebase Hosting
-
-Project Structure
-
+```
 src/
 ├── Components/
 │   ├── AddTransactionForm.js    # Component for adding new transactions
@@ -33,62 +28,61 @@ src/
 ├── firebase.js                  # Firebase configuration file
 ├── App.js                       # Main application component
 ├── index.js                     # Entry point of the application
+```
 
-Getting Started
+## Getting Started
 
 Follow the steps below to set up and run the project locally:
 
-Prerequisites
+### Prerequisites
 
-Node.js and npm installed on your system.
+- Node.js and npm installed on your system.
+- A Firebase project set up with Firestore and Hosting enabled.
 
-A Firebase project set up with Firestore and Hosting enabled.
+### Installation
 
-Installation
+1. Clone the repository:
 
-Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd transaction-management-app
+   ```
 
-git clone <repository-url>
-cd transaction-management-app
+2. Install dependencies:
 
-Install dependencies:
+   ```bash
+   npm install
+   ```
 
-npm install
+3. Configure Firebase:
 
-Configure Firebase:
+   - Replace the Firebase configuration in `src/firebase.js` with your own Firebase project settings.
 
-Replace the Firebase configuration in src/firebase.js with your own Firebase project settings.
+4. Start the development server:
 
-Start the development server:
+   ```bash
+   npm start
+   ```
 
-npm start
+   The app will run locally at `http://localhost:3000/`.
 
-The app will run locally at http://localhost:3000/.
-
-Firebase Hosting Link
+## Firebase Hosting Link
 
 The app is hosted at the following link:
-Transaction Management App Hosting
+**[Transaction Management App Hosting](https://fir-crud-7ed98.firebaseapp.com/)**
 
-(Clicking the link will open in a new tab)
 
-References
+## References
 
-React.js Documentation: https://reactjs.org/docs/getting-started.html
+- **React.js Documentation**: [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+- **Firebase Documentation**: [https://firebase.google.com/docs](https://firebase.google.com/docs)
+- **JavaScript MDN**: [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-Firebase Documentation: https://firebase.google.com/docs
 
-JavaScript MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+## Acknowledgments
 
-License
+- **React.js**: For the frontend framework.
+- **Firebase**: For backend services including Firestore and Hosting.
 
-This project is licensed under the MIT License. Feel free to use and modify the code.
-
-Acknowledgments
-
-React.js: For the frontend framework.
-
-Firebase: For backend services including Firestore and Hosting.
-
-For any queries or feedback, please feel free to reach out!
+---
 
